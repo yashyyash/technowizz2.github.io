@@ -1,0 +1,711 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.Background {
+  background:
+    linear-gradient(to right, rgba(76, 0, 130, 0.200), rgba(46, 46, 255, 0.200), rgba(255, 21, 255, 0.200), rgba(46, 46, 255, 0.200), rgba(76, 0, 130, 0.200)),
+    url('./MagicForest.jpg');
+  background-size: 1400% 100%, cover;
+  animation: rainbowCycle 14s linear infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* padding: 20px; */
+  height: 100vh;
+}
+
+.Technical-Events,
+.Seminars,
+.Gaming-Events {
+  background:
+    linear-gradient(to right, rgba(56, 56, 33, 0.576), rgba(255, 252, 159, 0.2),rgba(255, 252, 159, 0.2),rgba(255, 252, 159, 0.2), rgba(255, 252, 159, 0.2)),
+    url('technicalForest.jpg');
+  background-size: 1400% 100%, cover;
+  /* animation: rainbowCycle 14s linear infinite; */
+  text-align: center;
+  /* padding: 20px; */
+  /* margin-top: 20px; */
+  height: 100vh;
+}
+
+/**********************************************************************************Header Section*******************************************************/
+.header {
+  background-color: #ffffff00;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center;
+  margin-top: 20px; /* Add margin from the top */
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 80px; /* Adjust the height of the logos as needed */
+  margin: 0 10px; /* Add left and right margin for spacing */
+}
+
+.clg-name {
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+}
+
+.announcement {
+  text-align: center;
+  margin-top: 200px; /* Adjust margin from the top */
+  margin-bottom: 10px; /* Add margin from the bottom */
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: 2.8em;
+  color: #fff;
+  margin: 5px 0; /* Adjust margin between lines */
+  animation: blink 20s infinite; /* Slow down the blinking animation */
+}
+
+
+.wizardy-text {
+color: rgb(203, 203, 203);
+font-family: 'Monotype Corsiva', cursive;
+font-size: 12rem; /* Adjust font size */
+margin: 1px 0; /* Adjust margin between lines */
+position: relative;
+display: inline-block;
+font-weight: 500;
+animation: rainbowOutlineChange 7s infinite; /* Apply the rainbow outline animation */
+}
+
+.Icon-nav {
+  display: flex;
+}
+
+.nav-button {
+  background-color: #4caf4f00; /* Set your desired button color */
+  color: white; /* Set your desired text color */
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+  margin-top: 40px;
+}
+
+.nav-button:hover {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #33333300;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 100px; /* Add margin from the top */
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem; /* Increase font size */
+  margin: 0 30px; /* Add space between links */
+  position: relative;
+  animation: shake 0.5s infinite; /* Shake animation */
+}
+
+.navbar a:hover {
+  text-decoration: none;
+}
+
+/* Rainbow-colored underline on hover */
+.navbar a:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust the distance of the underline from the text */
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+}
+/**********************************************************************************Header Section*******************************************************/
+
+
+
+
+
+
+/**********************************************************************************Technical Events*******************************************************/
+.section-heading {
+  color: #ffffff !important; /* Change to your desired color */
+  text-shadow: 2px 2px 4px #000 !important; /* Add black outline */
+}
+
+.card-content h2,
+.card-content h3 {
+  color: #ffffff !important; /* Change to your desired color */
+  text-shadow: 1px 1px 2px #000 !important; /* Add black outline */
+}
+
+.card-content p {
+  font-size: 20px !important;
+  color: #ffffff !important; /* Change to your desired color */
+  text-shadow: 1px 1px 2px #000 !important; /* Add black outline */
+}
+
+.cards-container {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 40%;
+  height: 80vh;
+  margin: 10px;
+  padding: 20px;
+  border: 10px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card img {
+  width: 70%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-content h2 {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+  color: white;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #777;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.action-buttons button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px; 
+}
+
+.action-buttons button:last-child {
+  margin-right: 0; 
+}
+
+
+/**********************************************************************************Technical Events*******************************************************/
+
+
+/**********************************************************************************Footer*******************************************************/
+.footer {
+  background-color: #3498db; /* Blue color */
+  color: #fff; /* White text */
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+/**********************************************************************************Footer*******************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************************************************Media Quries*********************************************************/
+
+
+/* ************************************************************************4.5 Display Sizes*********************************************************/
+/* Media queries for different screen sizes */
+@media screen and (max-width: 320px) {
+  /* Styles for 4.5 inches display or smaller */
+  .logo {
+    height: 40px;
+  }
+  
+  .clg-name {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .bold-text {
+    font-size: 1.5em;
+  }
+
+  .wizardy-text {
+    font-size: 3.2rem;
+  }
+
+  .announcement {
+    text-align: center;
+    margin-top: 350px; /* Adjust margin from the top */
+  }
+
+  .navbar {
+    margin-top: 150px; /* Add margin from the top */
+  }
+  
+  .navbar a {
+    font-size: 1rem;
+    margin: 0 15px;
+  }
+
+  .nav-button {
+    background-color: #4caf4f00; /* Set your desired button color */
+    color: white; /* Set your desired text color */
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  
+  .nav-button:hover {
+    text-decoration: none;
+  }
+
+  
+  .card {
+    flex: 0 0 auto;
+    width: 40%;
+    height: 80vh;
+    margin: 10px;
+    padding: 20px;
+    border: 10px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .card img {
+    width: 70%;
+    object-fit: cover;
+  }
+
+  .card-content {
+    padding: 10px;
+  }
+
+  .card-content h2 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+    color: white;
+  }
+
+  .card-content p {
+    font-size: 14px;
+    color: #777;
+  }
+
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .action-buttons button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px; 
+  }
+
+  .action-buttons button:last-child {
+    margin-right: 0; 
+  }
+  
+}
+/* ************************************************************************4.5 Display Sizes*********************************************************/
+
+/* ************************************************************************5.5 Display Sizes*********************************************************/
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* Styles for 5.5 inches display */
+  /* Adjust styles as needed */
+  .logo {
+    height: 50px;
+  }
+  
+  .clg-name {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .bold-text {
+    font-size: 1.5em;
+  }
+
+  .announcement {
+    text-align: center;
+    margin-top: 300px; /* Adjust margin from the top */
+  }
+
+  .navbar {
+    margin-top: 150px; /* Add margin from the top */
+  }
+
+  .wizardy-text {
+    font-size: 5rem;
+  }
+
+  .navbar a {
+    font-size: 1.5rem;
+    margin: 0 15px;
+  }
+
+  .nav-button {
+    background-color: #4caf4f00; /* Set your desired button color */
+    color: white; /* Set your desired text color */
+    padding: 5px 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 40px;
+  }
+  
+  .nav-button:hover {
+    text-decoration: none;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    width: 80%;
+    height: 60vh;
+    margin: 10px;
+    padding: 20px;
+    border: 10px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .card img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .card-content {
+    padding: 10px;
+  }
+
+  .card-content h2 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+    color: white;
+  }
+
+  .card-content p {
+    font-size: 14px;
+    color: #777;
+  }
+
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .action-buttons button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px; 
+  }
+
+  .action-buttons button:last-child {
+    margin-right: 0; 
+  }
+  
+}
+/* ************************************************************************5.5 Display Sizes*********************************************************/
+
+/* ************************************************************************6.5 Display Sizes*********************************************************/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Styles for 6.5 inches display or 8 inches tablet */
+  /* Adjust styles as needed */
+  .logo {
+    height: 50px;
+  }
+  
+  .clg-name {
+    font-size: 1.5em;
+  }
+
+  .bold-text {
+    font-size: 2em;
+  }
+
+  .wizardy-text {
+    font-size: 7rem;
+  }
+
+  .announcement {
+    text-align: center;
+    margin-top: 350px; /* Adjust margin from the top */
+  }
+
+  .navbar {
+    margin-top: 150px; /* Add margin from the top */
+  }
+
+  .navbar a {
+    font-size: 1.5rem;
+    margin: 0 15px;
+  }
+  
+  .nav-button {
+    background-color: #4caf4f00; /* Set your desired button color */
+    color: white; /* Set your desired text color */
+    padding: 5px 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 40px;
+  }
+  
+  .nav-button:hover {
+    text-decoration: none;
+  }
+}
+/* ************************************************************************6.5 Display Sizes*********************************************************/
+
+/* ************************************************************************14 Display Sizes*********************************************************/
+@media screen and (min-width: 769px) and (max-width: 1366px) {
+  /* Styles for 14 inches laptop */
+  /* Adjust styles as needed */
+  .logo {
+    height: 50px;
+  }
+  
+  .clg-name {
+    font-size: 2em;
+  }
+
+  .bold-text {
+    font-size: 2.5em;
+  }
+
+  .wizardy-text {
+    font-size: 6rem;
+  }
+
+  .navbar a {
+    font-size: 1.5rem;
+    margin: 0 15px;
+  }
+
+  .nav-button {
+    background-color: #4caf4f00; /* Set your desired button color */
+    color: white; /* Set your desired text color */
+    padding: 5px 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  
+  .nav-button:hover {
+    text-decoration: none;
+  }
+}
+/* ************************************************************************14 Display Sizes*********************************************************/
+
+/* ************************************************************************15.6 Display Sizes*********************************************************/
+@media screen and (min-width: 1367px) {
+  /* Styles for 15.6 inches laptop and larger */
+  /* Adjust styles as needed */
+  .logo {
+    height: 50px;
+  }
+  
+  .clg-name {
+    font-size: 2em;
+  }
+
+  .bold-text {
+    font-size: 2.5em;
+  }
+
+  .wizardy-text {
+    font-size: 15rem;
+  }
+
+  .navbar a {
+    font-size: 1.5rem;
+    margin: 0 15px;
+  }
+
+  .nav-button {
+    background-color: #4caf4f00; /* Set your desired button color */
+    color: white; /* Set your desired text color */
+    padding: 5px 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 40px;
+  }
+  
+  .nav-button:hover {
+    text-decoration: none;
+  }
+}
+/* ************************************************************************15.6 Display Sizes*********************************************************/
+
+
+/* ************************************************************************Media Quries End*********************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************************************************ANIMATION*********************************************************/
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px); /* Adjust the amount of shaking */
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px); /* Adjust the amount of shaking */
+  }
+}
+@keyframes rainbowOutlineChange {
+  0% { text-shadow: 2px 2px 4px #FF0018; } /* Red */
+  16.666% { text-shadow: 2px 2px 4px #FFA52C; } /* Orange */
+  33.333% { text-shadow: 2px 2px 4px #FFFF41; } /* Yellow */
+  50% { text-shadow: 2px 2px 4px #008018; } /* Green */
+  66.666% { text-shadow: 2px 2px 4px #0000F9; } /* Blue */
+  83.333% { text-shadow: 2px 2px 4px #86007D; } /* Indigo */
+  100% { text-shadow: 2px 2px 4px #FF69B4; } /* Violet */
+}
+
+@keyframes rainbowCycle {
+  0% {
+      background-position: 0% 50%, 0% 0%;
+  }
+  100% {
+      background-position: 100% 50%, 0% 0%;
+  }
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px); /* Adjust the amount of shaking */
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px); /* Adjust the amount of shaking */
+  }
+}
+/* ************************************************************************ANIMATION*********************************************************/
+
