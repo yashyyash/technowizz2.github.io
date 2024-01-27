@@ -654,6 +654,110 @@ animation: rainbowOutlineChange 7s infinite; /* Apply the rainbow outline animat
   }
 }
 
+
+
+
+
+/*******************************************************************************************************/
+
+
+/* Media queries for different screen sizes */
+@media screen and (max-width: 480px) {
+  /* Styles for smaller screens */
+  .logo {
+    height: 40px;
+  }
+
+  .clg-name {
+    font-size: 1em;
+  }
+
+  .bold-text {
+    font-size: 1.5em;
+  }
+
+  .wizardy-text {
+    font-size: 3.2rem;
+  }
+
+  .announcement {
+    margin-top: 350px;
+  }
+
+  .navbar {
+    margin-top: 150px;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+  }
+
+  .nav-button {
+    font-size: 20px;
+  }
+
+  .card {
+    width: 40%;
+    height: 80vh;
+  }
+
+  .card img {
+    width: 70%;
+  }
+
+  .card-content h2 {
+    font-size: 1.5em;
+  }
+
+  .action-buttons button {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Styles for medium-sized screens */
+  .logo {
+    height: 50px;
+  }
+
+  .wizardy-text {
+    font-size: 4.2rem;
+  }
+
+  .nav-button {
+    font-size: 12px;
+    padding: 5px 5px;
+  }
+
+  .card {
+    width: 80%;
+    height: 60vh;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .action-buttons button {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1366px) {
+  /* Styles for larger screens */
+  .nav-button {
+    font-size: 20px;
+    padding: 5px 5px;
+  }
+}
+
+@media screen and (min-width: 1367px) {
+  /* Styles for extra-large screens */
+  .nav-button {
+    font-size: 25px;
+    padding: 5px 5px;
+  }
+}
 /* ************************************************************************14 Display Sizes*********************************************************/
 @media screen and (min-width: 769px) and (max-width: 1366px) {
   /* Styles for 14 inches laptop */
