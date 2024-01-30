@@ -32,7 +32,7 @@ body {
   text-align: center;
   /* padding: 20px; */
   /* margin-top: 20px; */
-  height: 100vh;
+  height: 106vh;
 }
 
 /**********************************************************************************Header Section*******************************************************/
@@ -114,7 +114,7 @@ animation: rainbowOutlineChange 7s infinite; /* Apply the rainbow outline animat
   color: #fff;
   text-align: center;
   padding: 10px;
-  margin-top: 100px; /* Add margin from the top */
+  margin-top: 50px; /* Add margin from the top */
 }
 
 .navbar a {
@@ -174,10 +174,10 @@ animation: rainbowOutlineChange 7s infinite; /* Apply the rainbow outline animat
 
 .card {
   flex: 0 0 auto;
-  width: 40%;
+  width: 30%;
   height: 80vh;
   margin: 10px;
-  padding: 20px;
+  padding: 10px;
   border: 10px solid #ccc;
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -388,14 +388,13 @@ animation: rainbowOutlineChange 7s infinite; /* Apply the rainbow outline animat
     font-size: 1em;
     text-align: center;
   }
-
   .bold-text {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 
   .announcement {
     text-align: center;
-    margin-top: 200px; /* Adjust margin from the top */
+    margin-top: 300px; /* Adjust margin from the top */
   }
 
   .navbar {
@@ -403,7 +402,8 @@ animation: rainbowOutlineChange 7s infinite; /* Apply the rainbow outline animat
   }
 
   .wizardy-text {
-    font-size: 4.2rem;
+    font-size: 5rem;
+    
   }
 
   .navbar a {
@@ -532,232 +532,9 @@ animation: rainbowOutlineChange 7s infinite; /* Apply the rainbow outline animat
   .nav-button:hover {
     text-decoration: none;
   }
-  .card {
-    flex: 0 0 auto;
-    width: 80%;
-    height: 60vh;
-    margin: 10px;
-    padding: 20px;
-    border: 10px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-
-  .card img {
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .card-content {
-    padding: 10px;
-  }
-
-  .card-content h2 {
-    font-weight: bold;
-    margin-bottom: 5px;
-    text-align: center;
-    color: white;
-  }
-
-  .card-content p {
-    font-size: 14px;
-    color: #777;
-  }
-
-  .action-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-
-  .action-buttons button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 15px 60px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    margin-right: 10px; 
-  }
-
-  .action-buttons button:last-child {
-    margin-right: 0; 
-  }
-  
 }
 /* ************************************************************************6.5 Display Sizes*********************************************************/
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  /* Styles for 6.4 to 6.67 inches display or 8 inches tablet */
-  /* Adjust styles as needed */
 
-  .logo {
-    height: 50px;
-  }
-
-  .clg-name {
-    font-size: 1.5em;
-  }
-
-  .bold-text {
-    font-size: 2em;
-  }
-
-  .wizardy-text {
-    font-size: 7rem;
-  }
-
-  .announcement {
-    text-align: center;
-    margin-top: 350px; /* Adjust margin from the top */
-  }
-
-  .navbar {
-    margin-top: 150px; /* Add margin from the top */
-  }
-
-  .navbar a {
-    font-size: 1.5rem;
-    margin: 0 15px;
-  }
-
-  .nav-button {
-    background-color: #4caf4f00; /* Set your desired button color */
-    color: white; /* Set your desired text color */
-    padding: 5px 5px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 12px;
-    margin-top: 40px;
-  }
-
-  .nav-button:hover {
-    text-decoration: none;
-  }
-
-  /* Rest of the styles... */
-
-  .action-buttons button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 15px 60px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-
-  .action-buttons button:last-child {
-    margin-right: 0;
-  }
-}
-
-
-
-
-
-/*******************************************************************************************************/
-
-
-/* Media queries for different screen sizes */
-@media screen and (max-width: 480px) {
-  /* Styles for smaller screens */
-  .logo {
-    height: 40px;
-  }
-
-  .clg-name {
-    font-size: 1em;
-  }
-
-  .bold-text {
-    font-size: 1.5em;
-  }
-
-  .wizardy-text {
-    font-size: 3.2rem;
-  }
-
-  .announcement {
-    margin-top: 350px;
-  }
-
-  .navbar {
-    margin-top: 150px;
-  }
-
-  .navbar a {
-    font-size: 1rem;
-  }
-
-  .nav-button {
-    font-size: 20px;
-  }
-
-  .card {
-    width: 40%;
-    height: 80vh;
-  }
-
-  .card img {
-    width: 70%;
-  }
-
-  .card-content h2 {
-    font-size: 1.5em;
-  }
-
-  .action-buttons button {
-    font-size: 20px;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  /* Styles for medium-sized screens */
-  .logo {
-    height: 50px;
-  }
-
-  .wizardy-text {
-    font-size: 4.2rem;
-  }
-
-  .nav-button {
-    font-size: 12px;
-    padding: 5px 5px;
-  }
-
-  .card {
-    width: 80%;
-    height: 60vh;
-  }
-
-  .card img {
-    width: 100%;
-  }
-
-  .action-buttons button {
-    font-size: 20px;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1366px) {
-  /* Styles for larger screens */
-  .nav-button {
-    font-size: 20px;
-    padding: 5px 5px;
-  }
-}
-
-@media screen and (min-width: 1367px) {
-  /* Styles for extra-large screens */
-  .nav-button {
-    font-size: 25px;
-    padding: 5px 5px;
-  }
-}
 /* ************************************************************************14 Display Sizes*********************************************************/
 @media screen and (min-width: 769px) and (max-width: 1366px) {
   /* Styles for 14 inches laptop */
@@ -768,6 +545,14 @@ animation: rainbowOutlineChange 7s infinite; /* Apply the rainbow outline animat
   
   .clg-name {
     font-size: 2em;
+  }
+
+  .announcement{
+    margin-top: -7px;
+  }
+
+  .Icon-nav{
+    margin-bottom: 80px;
   }
 
   .bold-text {
@@ -798,8 +583,24 @@ animation: rainbowOutlineChange 7s infinite; /* Apply the rainbow outline animat
   .nav-button:hover {
     text-decoration: none;
   }
+
+  .Technical-Events{
+    margin-top: 1px;
+  }
+
+  .seminar-section{
+    
+  }
 }
 /* ************************************************************************14 Display Sizes*********************************************************/
+
+/* ************************************************************************15 Display Sizes*********************************************************/
+@media screen and (min-width: 992px){
+
+}
+
+/* ************************************************************************15 Display Sizes*********************************************************/
+
 
 /* ************************************************************************15.6 Display Sizes*********************************************************/
 @media screen and (min-width: 1367px) {
